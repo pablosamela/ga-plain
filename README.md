@@ -1,7 +1,7 @@
 # Ga
 This project was generated with NPM.
 
-# Start Application.
+## Start Application.
 Just open index.html. 
 
 ## Install
