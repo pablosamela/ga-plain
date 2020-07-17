@@ -1,0 +1,53 @@
+$pink: #ee6762
+$light-blue: #d0f6f6
+
+$primary: $pink
+$secondary: $light-blue
+
+@import "../../node_modules/bootstrap/scss/bootstrap"
+
+.vertical-center
+  position: absolute
+  top: 50%
+
+.modal-dialog-container
+  .mat-dialog-container
+    position: relative
+    padding: 0 !important
+  
+.close-icon
+  position: absolute
+  top: 0
+  right: 0
+  padding: 8px
+  line-height: 14px
+  min-width: auto
+  z-index: 1
+
+.bg-email-subscription
+  background-color: $light-blue
+
+.ic-email-subscription
+  width: 140px
+  height: 60px
+  margin-bottom: 20px
+  background-image: url(assets/img/envelope-v.svg)
+
+input.error
+  border-color: $danger
+  background-color: lighten($danger, 7.5%)
+
+input:valid 
+  border-color: $success
+  background-color: $white
+
+.text-error
+  color: $danger
+  font-size: 0.8em
+
+.text-success
+  color: $success
+  font-size: 0.8em
+
+#messageResponse
+  display: none

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-primary vertical-center" data-toggle="modal" data-target="#gaModal">Click Me!</button>
+    </div>
+
+
+    <div class="modal fade" id="gaModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <a href="#" class="close-icon" data-dismiss="modal" aria-label="Close">
+            <img src="assets/icons/close-black-18dp.svg">
+          </a>  
+
+          <div class="row align-items-center no-gutters">
+            <div class="col-12 col-md-6 p-3">
+
+              <div class="d-inline-block mb-1">
+                <img src="assets/img/garmin.com.jpg" class="float-left img-thumbnail mr-3 mb-3" alt="Garmin coupon code">
+                <h4 class="pt-3">20% discount on purchases up to $1000</h4>
+              </div>
+              
+              <div class="row justify-content-center my-3">
+                <div class="col-10">
+                  Take control of your boat right from your wrist. Quatix 6X Solar Titanium
+                  with Titanium Band offer for $1,149.99
+                </div>
+              </div>
+              
+              <div class="row justify-content-center my-3">
+                <div class="col-10 text-center">
+                  <form id="cuponCodeFrom">
+                    <div class="input-group">
+                      <input type="text" class="form-control" readonly="readonly" id="cuponCodeControl" name="cuponCodeControl" value="Columbus2018">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" id="cuponCodeButton" type="button">Copy code</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-12 col-md-6 p-3 bg-email-subscription">
+              <div class="container">
+                
+                <div class="row justify-content-center">
+                  <div class="col-10 col-md-8 text-center">
+                    <img src="assets/img/envelope-v.svg" />
+                    <h4 class="my-3">Never miss a deal.</h4>
+                    <p>
+                      Subscribe to see hot deals first (while they're still hot), plus feature
+                      updates and more.
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="row justify-content-center">
+                  <div class="col-10 col-md-8 text-center">
+                    <form id="newsletterFrom">
+                      <input type="email" class="form-control" placeholder="Enter your email address" id="emailControl" name="emailControl" required>
+                      
+                      <!-- show in case of submit ajax error, toogle beteewn clases -->
+                      <div id="messageResponse" class="text-success">
+                        Congrats! You\’re officially subscribed to Giving Assistant!
+                      </div>
+
+                      <button id="emailButton" class="btn btn-primary mt-3" type="button">Subscribe</button>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery.validate.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+  </body>
+</html>
